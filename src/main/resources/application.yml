@@ -1,0 +1,24 @@
+server:
+  servlet:
+    jsp:
+      init-parameters:
+        development: true
+spring:
+  devtools:
+    livereload:
+      enabled: true
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:log4jdbc:mysql://localhost:3306/react?serverTimezone=UTC&useSSL=false&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+    username: reactdb
+    password: Admin1234!
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /
+
+mybatis:
+  mapper-locations: mybatis/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
