@@ -13,6 +13,7 @@ spring:
     username: reactdb
     password: Admin1234!
   mvc:
+    static-path-pattern: /resources/**
     view:
       suffix: .jsp
       prefix: /
@@ -21,4 +22,3 @@ mybatis:
   mapper-locations: mybatis/**/*.xml
   configuration:
     map-underscore-to-camel-case: true
-
