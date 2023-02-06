@@ -16,8 +16,8 @@ public class SampleController {
 	@RequestMapping(value = "/sample/sample", method = {RequestMethod.POST, RequestMethod.GET})
 	public ModelAndView sample() {
 		ModelAndView mav = new ModelAndView();
-//		String test = sampleService.selectTest();
-//		System.out.println(test);
+		String test = sampleService.selectTest();
+		System.out.println(test);
 		mav.setViewName("sample/sample");
 		return mav;
 	}

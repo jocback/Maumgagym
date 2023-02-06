@@ -8,8 +8,8 @@ spring:
     livereload:
       enabled: true
   datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:log4jdbc:mysql://localhost:3306/react?serverTimezone=UTC&useSSL=false&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/react?serverTimezone=UTC&useSSL=false&characterEncoding=utf-8&allowPublicKeyRetrieval=true
     username: reactdb
     password: Admin1234!
   mvc:
